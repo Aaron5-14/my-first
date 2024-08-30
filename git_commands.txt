@@ -3,6 +3,7 @@ git config --global user.email
 git config --global core.editor vim (or editor.core?)
 git status
 git init
-git add
-git commit
+git add (-A for all modified changed files)
+git commit (-m + message!)
 git log (history)
+git commit --amend (modify the mssage of files of last commit)
