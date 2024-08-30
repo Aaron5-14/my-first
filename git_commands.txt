@@ -1,0 +1,7 @@
+git config --global user.name
+git config --global user.email
+git config --global core.editor vim (or editor.core?)
+git status
+git init
+git add
+git commit
