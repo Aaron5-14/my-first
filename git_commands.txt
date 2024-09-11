@@ -20,3 +20,5 @@ hwo to change branch? Head points to a reference to a branch! if head -> master 
 git branch
 git commit -a -m "text" add and commit!!!
 git branch <nameofbranch> (make a new branch(
+git switch <name of branch> !!
+
