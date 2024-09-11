@@ -17,3 +17,5 @@ git config --global core.editor "code --wait"  (fond in the git site ez search)
 git master  = github main
 the convention is to have the master bransh as the stable branch but it is not a rule
 hwo to change branch? Head points to a reference to a branch! if head -> master then the book is opened in master if Head-> branchx then..
+git branch
+git commit -a -m "text" add and commit!!!
