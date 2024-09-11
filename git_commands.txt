@@ -7,3 +7,4 @@ git add (-A for all modified changed files)
 git commit (-m + message!)
 git log (history)
 git commit --amend (modify the mssage of files of last commit)
+atomic commit: commit files one by one instead of all of them at once!
