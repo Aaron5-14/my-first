@@ -19,3 +19,4 @@ the convention is to have the master bransh as the stable branch but it is not a
 hwo to change branch? Head points to a reference to a branch! if head -> master then the book is opened in master if Head-> branchx then..
 git branch
 git commit -a -m "text" add and commit!!!
+git branch <nameofbranch> (make a new branch(
