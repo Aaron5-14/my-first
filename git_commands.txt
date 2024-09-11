@@ -14,4 +14,6 @@ git log --abbrev-commit
 git log --online
 make a .gitignore file ( use gitignore.io site or sth) and in that file add name of files you dont want git to trak (dir/ for directories)
 git config --global core.editor "code --wait"  (fond in the git site ez search)
-
+git master  = github main
+the convention is to have the master bransh as the stable branch but it is not a rule
+hwo to change branch? Head points to a reference to a branch! if head -> master then the book is opened in master if Head-> branchx then..
