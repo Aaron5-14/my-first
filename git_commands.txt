@@ -21,4 +21,9 @@ git branch
 git commit -a -m "text" add and commit!!!
 git branch <nameofbranch> (make a new branch(
 git switch <name of branch> !!
+git checkout <branchname>
+git checkout -b <branchname> create and change into new branch
+git switch -c <branchname> create and switch to branch
+git branch -d <branchname> (delete branch)
+git branch -D (--delete --force)
 
