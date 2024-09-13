@@ -27,3 +27,8 @@ git switch -c <branchname> create and switch to branch
 git branch -d <branchname> (delete branch)
 git branch -D (--delete --force)
 
+MERGE types: 1. if master did not change while the branch was changing (fast-forward)
+2. if master changed but the changes are separate (without conflict)
+3. if master changed but changes have overlaps (with conflict)
+
+git merge <nameofbranch>  (merge nameofbranch with current branch)
