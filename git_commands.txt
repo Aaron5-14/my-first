@@ -108,3 +108,11 @@ git push origin <nameofbranch>
 
 # Upstream 
 git push -u origin master (it saves that next time git push is entered in master branch it knows to save changes to master branch in origin remote)
+
+# need http key to push the token is the password!
+
+# SSH key seems better
+generate ssh key
+share public key with github
+git remote set-url origin git@github....
+get the link ssh from github
