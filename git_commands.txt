@@ -95,10 +95,16 @@ NOTE: Use git reset if your files are local and no one else has them otherwise u
 # github
 git clone <link from code traingle> (downloads repository)
 
+NOTE: to uploadlocal to github first make a repo in github and copy its link then use
+        git remote add origin <link>
+
 # how to connect local repo to online repo
 git remote add origin <linktoserver>
 git remote -v (list remotes)
-NOTE: origin is the name of main or master remote
+NOTE: origin is the default name of main or master remote
 
 # How upload local repo to github
 git push origin <nameofbranch>
+
+# Upstream 
+git push -u origin master (it saves that next time git push is entered in master branch it knows to save changes to master branch in origin remote)
