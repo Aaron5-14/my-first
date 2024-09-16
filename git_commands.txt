@@ -4,6 +4,7 @@ git config --global core.editor vim (or editor.core?)
 git status
 git init
 git add (-A for all modified changed files)
+git add . (All)
 git commit (-m + message!)
 git log (history)
 git commit --amend (modify the mssage of files of last commit)
@@ -32,3 +33,72 @@ MERGE types: 1. if master did not change while the branch was changing (fast-for
 3. if master changed but changes have overlaps (with conflict)
 
 git merge <nameofbranch>  (merge nameofbranch with current branch)
+wip = work in progress
+
+git stash ( or stash save)
+git stash pop
+git stash list (list all stashes)
+git stash show stash@{id} (show detaild of thi stash)
+git stash show -p stash2{id} (show even more details about what changed)
+# ONLY TRACKED FILES CAN BE STASHED!!
+unless: git stash -u 
+
+git stash apply  (same as pop but keeps a copy of changes in stash)
+git stash apply stash@{id}
+## STASH IS A STACK MEANING FIRST IN LAST OUT! SO POP AND APPLY WILL GET 
+## THE LASTEST CHANGE OUT
+
+in stash{id} the id=0 is the newest stash! and first one out!
+git stash drop stash@{id}
+git stash clear  (delete all)
+
+git diff (show unstaged modified differences)
+git diff --staged (show staged files difference)
+git diff HEAD (show all differences staged or not for where HEAD is pointing to)
+git diff --staged <nameoffiles> to filter!
+
+git diff master..Ali <nameoffile>   (difference of latest commit of branches master and Ali with master being the (a) and Ali (b))
+git diff <commitId1>..<commitId2>
+
+# How to go back to other comits  (DETACHED HEAD)
+git checkout <first 7 digits of commidId>
+git checkout HEAD~<number of commits to go back>
+git switch - (returns to commit whete it was pointing to last)
+
+# how to discard all changes which are not commited
+git checkout HEAD <nameoffile> (return the state of <nameoffile> to state 
+    it had in commit where HEAD is poiting to)
+
+git checkout -- <nameoffile> (same as above)
+
+# Git restore:
+git restore <file>
+git restore --source HEAD~<number of commites before HEAD> <file> 
+
+# how to take a file out of staging
+git restore --staged <file>
+
+# How to delete commits and go back 
+git reset <commitId of commit you want to go back to> 
+git reset HEAD~<number of commits to go back>
+NOTE: after using git reset the changes are carried along as unstaged files~ you can get rid of them
+git reset --hard HEAD~n or <commid id> (go back to previous commit without bringing along changes)
+
+NOTE: GIT REVERT IS BETTER!
+# Git REVERT
+It creates a new commit which IGNORES (not delete) the commits you want to delete
+git revert <Id of commit you want to ignore>
+
+NOTE: Use git reset if your files are local and no one else has them otherwise use git revert
+
+
+# github
+git clone <link from code traingle> (downloads repository)
+
+# how to connect local repo to online repo
+git remote add origin <linktoserver>
+git remote -v (list remotes)
+NOTE: origin is the name of main or master remote
+
+# How upload local repo to github
+git push origin <nameofbranch>
